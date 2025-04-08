@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen flex justify-center items-center">
+  <div class="w-full h-screen flex justify-center items-center bg-blue-200">
     <SignupForm />
   </div>
 </template>

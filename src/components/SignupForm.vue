@@ -128,14 +128,13 @@ export default {
             this.passwordError = this.password.length > 5 ? '' : 'Password must be at least 5 characters long';
 
             if (!this.passwordError) {
-                console.log("Form submitted with data:", {
-                    email: this.email,
-                    password: this.password,
-                    role: this.role,
-                    acceptTerms: this.acceptTerms,
-                    names: this.names,
-                    skills: this.skills,
-                });
+            alert(`Form submitted with data:
+                Email: ${this.email}
+                Password: ${this.password}
+                Role: ${this.role}
+                Accept Terms: ${this.acceptTerms}
+                Names: ${this.names.join(', ')}
+                Skills: ${this.skills.join(', ')}`);
             }
         }
     }
